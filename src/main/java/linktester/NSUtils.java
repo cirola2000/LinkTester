@@ -1,4 +1,4 @@
-package lodVader.spring.measures2;
+package linktester;
 
 public class NSUtils {
 

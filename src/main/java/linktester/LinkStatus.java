@@ -1,7 +1,7 @@
 /**
  * 
  */
-package lodVader.spring.measures2;
+package linktester;
 
 /**
  * @author Ciro Baron Neto

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package lodVader.spring.measures2;
+package linktester;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -20,7 +20,7 @@ public class ConnectionService {
 	private Integer responseCode = null;
 
 	/**
-	 * Opens a new connection
+	 * Opens a new connection 
 	 * 
 	 * @param link
 	 * @throws MalformedURLException

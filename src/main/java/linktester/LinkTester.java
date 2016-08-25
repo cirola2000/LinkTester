@@ -1,7 +1,7 @@
 /**
  * 
  */
-package lodVader.spring.measures2;
+package linktester;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,7 +19,7 @@ public class LinkTester {
 
 	List<Link> links = null;
 
-	HashMap<String, LinkTesterThread> threads = new HashMap<>();
+	HashMap<String, LinkTesterThread> threads = new HashMap<>(); 
 	
 	int pause = 1000;
 
@@ -99,7 +99,7 @@ public class LinkTester {
 		ArrayList<Link> lns = new ArrayList<>();
 		lns.add(new Link("http://www.google.de/?q=oi", true));
 		lns.add(new Link("http://www.google.de/?q=oiasd", false));
-		lns.add(new Link("http://www.yahoo.com/bunddd/daas", true));
+		lns.add(new Link("http://www.yahoo.com/bund/daas", true));
 		lns.add(new Link("http://www.yahoo.com/?q=oiasd", true));
 		lns.add(new Link("http://www.yahoo.com", true));
 
@@ -108,10 +108,9 @@ public class LinkTester {
 		tester.setNumberOfThreads(50);
 		
 		List<Link> links  = tester.testLinks();
-		for(Link ll : links){
-			System.out.println(ll.getResponseCode());
+		for(Link link : links){
+			System.out.println(link.getResponseCode());
 		}
-
 	}
 
 }
