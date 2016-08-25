@@ -3,7 +3,7 @@ A library to test a set of links over the internet
 
 
 ##Simple example:
-The following example creates a list of links which should be tested over the internet. 
+The following example creates a list of links which will be tested over the internet. 
 
 ```
 	public static void main(String[] args) {
