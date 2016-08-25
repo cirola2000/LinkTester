@@ -17,7 +17,7 @@ The following example creates a list of links which will be tested over the inte
 
 		LinkTester tester = new LinkTester(lns);
 		
-		// we should set an interval for queries requested to the same server, otherwise we will be dinied
+		// we should set an interval for queries requested to the same server, otherwise we will be denied
 		tester.setPause(50);
 		
 		// number of threads to test links in parallel
