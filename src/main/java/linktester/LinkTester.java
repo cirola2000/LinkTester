@@ -23,7 +23,7 @@ public class LinkTester {
 	
 	int pause = 1000;
 
-	int numberOfThreads = 10;
+	int numberOfThreads = 10; 
 
 	/**
 	 * Constructor for Class LinkTester
@@ -91,26 +91,6 @@ public class LinkTester {
 	 */
 	public void setNumberOfThreads(int numberOfThreads) {
 		this.numberOfThreads = numberOfThreads;
-	}
-	
-
-	public static void main(String[] args) {
-
-		ArrayList<Link> lns = new ArrayList<>();
-		lns.add(new Link("http://www.google.de/?q=oi", true));
-		lns.add(new Link("http://www.google.de/?q=oiasd", false));
-		lns.add(new Link("http://www.yahoo.com/bund/daas", true));
-		lns.add(new Link("http://www.yahoo.com/?q=oiasd", true));
-		lns.add(new Link("http://www.yahoo.com", true));
-
-		LinkTester tester = new LinkTester(lns);
-		tester.setPause(50);
-		tester.setNumberOfThreads(50);
-		
-		List<Link> links  = tester.testLinks();
-		for(Link link : links){
-			System.out.println(link.getResponseCode());
-		}
 	}
 
 }
